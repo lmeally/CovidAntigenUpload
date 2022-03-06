@@ -1,0 +1,72 @@
+<html>
+<body>
+<html>
+<head>
+<title>User Form</title> </head>
+<body>
+<h2>User Form</h2>
+<form method="post"
+
+<div class = "inputbox">
+<label for ="name">Name:</label>
+<input type ="text" id="name" name="name" required placeholder="Name" />
+</div>
+
+<div class = "inputbox">
+<label for ="phoneNumber">Phone Number:</label>
+<input type ="number" id="phoneNumber" name="phoneNumber" required placeholder="Phone Number" />
+</div>
+
+<div class = "inputbox">
+<label for ="email">Email:</label>
+<input type ="email" id="email" name= "email" required placeholder="Email" />
+</div>
+
+<div class = "inputbox">
+<label for ="DOB">Date of Birth:</label>
+<input type ="date" id="DOB"  name = "DOB" required placeholder="Date of Birth" />
+</div>
+
+<div class = "inputbox">
+<label for ="medicalCard">Medical Card:</label>
+<input type ="number" id="medicalCard"  name ="medicalCard" required placeholder="Medical" />
+</div>
+
+
+
+
+<div class="new-user" >
+<input type="submit" value="Submit" name="new-user"/>
+<input type="reset" value="Clear" />
+</div>
+
+
+</form>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+	else  
+			{
+				//Successful login
+				$_SESSION['name'] = $_POST['name'] ; 
+															
+															
+				echo 	"<h2> Login successful!</h2>
+						<h2>Weclome to our Booking Menu</h2>
+						<h3>Do you want to check your Results</h3>
+						<input type ='button' value = 'Results' onclick = 'window.location = \"results.php\'>";
+
+			}
+			
